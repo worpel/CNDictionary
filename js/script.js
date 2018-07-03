@@ -45,7 +45,7 @@ const searchbox = document.getElementById('searchInput');
 let arrayItem = [Math.floor(db.length * Math.random())];
 console.log(arrayItem);
 
-$(document).ready(function() {
+$(document).ready(() => {
   $('#container').css('display', 'none');
   $('#container').fadeIn(2000);
   let title = document.getElementById('title');
@@ -54,13 +54,13 @@ $(document).ready(function() {
   let bodyTypewriter = new Typewriter(body, {
     typingSpeed: 20
   });
-  setTimeout(function() {
+  setTimeout(() => {
     textTypewriter
       .typeString(db[arrayItem].title)
       .pauseFor(10000)
       .start();
   }, 1200);
-  setTimeout(function() {
+  setTimeout(() => {
     bodyTypewriter
       .typeString(db[arrayItem].def)
       .pauseFor(10000)
