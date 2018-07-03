@@ -1,0 +1,77 @@
+@font-face {
+    font-family: GilroyLight;
+    src: url('./fonts/Gilroy-Light.otf');
+}
+
+@font-face {
+    font-family: GilroyExtraBold;
+    src: url('./fonts/Gilroy-ExtraBold.otf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#searchContainer {
+    height: 20vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#searchInput {
+    display: flex;
+    outline: none;
+    width: 20vw;
+    align-items: center;
+    font-size: 2rem;
+    font-family: GilroyLight;
+    border: none;
+    border-bottom: 2px solid #274e9b;
+}
+
+#wordContainer {
+    margin: 0 auto;
+    margin-top: 10vh;
+    height: 50vh;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: move .5s;
+    background-color: #274E9B;
+}
+
+@media (max-width: 1000px) {
+    #wordcontainer {
+        background-color: red;
+    }
+}
+
+@keyframes move {
+    0% {
+        transform: translate(-1000%, 0);
+    }
+    100% {
+        transform: translate(0%, 0);
+    }
+}
+
+#content {
+    width: 30vw;
+    color: white;
+}
+
+#title {
+    font-family: GilroyExtraBold;
+    src: url(Gilroy-ExtraBold.otf);
+    font-size: 3rem;
+    text-shadow: 0px 4px #15397F;
+}
+
+#body {
+    font-family: GilroyLight;
+    src: url(Gilroy-ExtraBold.otf);
+}
